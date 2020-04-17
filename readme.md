@@ -2,4 +2,5 @@
 - This app scraps IEDCR website and provides a rest api
 
 ##### Todo
-[] Save data to MongoDB
+
+- [ ] Save data to MongoDB
