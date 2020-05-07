@@ -1,6 +1,5 @@
 const getData = require('../app/getData.js');
 const axios = require('axios');
-console.log(getData);
 exports.handler = function(event, context, callback){
     const { httpMethod } = event
     if(httpMethod !== 'GET'){
@@ -17,7 +16,6 @@ exports.handler = function(event, context, callback){
                 })
             })
         }).catch(error=> {
-            console.log(error)
             callback(null, {
                 statusCode: 200,
                 body: 'Error'
